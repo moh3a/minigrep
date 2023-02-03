@@ -52,6 +52,8 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
+// a documentation comment is run with 3 slashes
+/// take query string and search through the contents of the provided file
 pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
     contents
         .lines()
